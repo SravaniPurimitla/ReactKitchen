@@ -13,14 +13,13 @@ const Recipe=()=>{
     }
     return(
         <>
-        <center>
+       
         <h3>Food Recipe's</h3>
         <form onSubmit={SubmitHandler}>
             <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)}/><br/>
             <input type="submit" className="btn btn-primary" value="Search"></input>
         </form>
-        {data.length>=1?<Products data={data}/>:null}
-        </center>
+        {data.length>=1 && <Products data={data}/>}
         </>
     )
 }
