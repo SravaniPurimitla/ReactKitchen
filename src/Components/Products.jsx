@@ -10,7 +10,7 @@ const Products=({data})=>{
                     <div class="card-body">
                     <center>
                         <h5 class="card-title">{data?.recipe?.label}</h5>
-                        <p class="card-text">Total Amount Of Calories : {Math.round(data?.recipe?.calories)}</p>
+                        <p class="card-text">Total Number Of Calories : {Math.round(data?.recipe?.calories)}</p>
                         <a href="#" class="btn btn-primary">Buy</a>
                         </center>
                     </div>
