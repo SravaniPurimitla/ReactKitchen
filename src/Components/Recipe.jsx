@@ -14,7 +14,7 @@ const Recipe=()=>{
     return(
         <>
        
-        <h3>Food Recipe's</h3>
+        <h3>Yummy Food Recipe's</h3>
         <form onSubmit={SubmitHandler}>
             <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)}/><br/>
             <input type="submit" className="btn btn-primary" value="Search"></input>
